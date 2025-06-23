@@ -1,0 +1,129 @@
+html{ 
+    position: relative;
+    height: 100%;
+}
+*{
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+}
+
+body{
+
+    height: auto;
+}
+body.fixed{
+    height: 100vh;
+    overflow: hidden;
+}
+.header-icon{
+    width: 48px;
+    
+    display: block;
+}
+ i{
+    font-size: 1.5rem;
+    color: white;
+    opacity: 0.7;
+}
+nav{z-index: 1;}
+.navbar{
+
+    height: auto;
+
+}
+.navbar div:first-child{z-index: 1;}
+
+.navbar img{
+    height: 1.7rem;
+
+}
+ul{
+    width: 100%;
+    list-style-type: none;
+    font-size: 1rem;
+    color: white;
+} 
+ul li{
+    color: rgba(255, 255, 255, 0.505);
+}
+ul li{
+    color: white;
+   
+}
+.offCanvas{
+    flex-direction: column;
+    height: 100vh;
+        top: 0;
+        z-index: 0;
+    width:80%;
+}
+.hide{
+    display: none !important;
+}
+.row{
+        row-gap: 15px;
+}
+.img-container > img{
+    height: 100%;
+    width: 100%;
+}
+button{
+    border-radius: 0 !important;
+}
+
+.contact h1{
+    font-size: 2rem;
+    color: white;
+}
+
+.contact  a{
+    display: block;
+    margin-top: 20px;
+    font-size: 1.5rem;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
+}
+.contact a:hover{
+    text-decoration-thickness: 3px;
+}
+li.active{
+    text-decoration: underline;
+    opacity: 1;
+}
+nav li{
+    opacity: 0.7;
+}
+nav li:hover{
+    text-decoration: underline;
+    opacity: 1;
+}
+footer svg {
+    vertical-align: middle;
+    width: 30px;
+    color: white;
+    margin: 70px 0;
+}
+.footer-content{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.403);
+}
+.footer-list{
+    justify-content: center;
+    
+    display: flex;
+    opacity: 0.7;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+.footer-list li:not(:nth-child(1))::before{
+    content: '.';
+    margin: 0 20px;
+}
+.activeli{
+    background-color: #ffffff12;
+}
+.offCanvas > ul >li:hover{
+    background-color: #ffffff12;
+}
+.offCanvas > .profile{
+    background-color: #ffffff12;
+}
